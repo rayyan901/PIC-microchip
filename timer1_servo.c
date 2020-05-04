@@ -18,26 +18,7 @@
 
 int16 rtcc=0,timerVal=0xffb8;  //e0=14ms d0=15ms    c0=18ms b9=18.8ms b7=20.2ms
 int16 poswidth=10;
-//!#int_RTCC
-//!
-//!void RTCC_isr()
-//!{
-//!   if(rtcc==0){
-//!   output_toggle(GP1);
-//!   }
-//!   if(rtcc==1500){
-//!   output_low( GP1 ); // turn LED on
-//!   
-   
- //  }
-//!   //output_low( GP1 ); // turn LED off
-//!rtcc=rtcc+1;  // set_timer0(99);
-//!
-//!   if(rtcc==16){
-//!   rtcc=0;
-//!   }
-//!//set_timer0(231);   
-//!}
+
 //====================
 #INT_TIMER1
 void wave_timer() {
